@@ -1,0 +1,355 @@
+html,
+body {
+    width: 100%;
+    background: linear-gradient(50deg, #314755, #26A0DA);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+
+.container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows {
+    width: 90%;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thecard{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+
+.cards {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    
+
+}
+.back_card {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+
+ 
+}
+
+.top {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cenc {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 4px;
+    padding: 10px;
+}
+.cenc_1 {
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: 70px;
+}
+
+.inp {
+    width: 250px;
+    border-radius: 4px;
+    border: none;
+}
+
+.cardn {
+    margin-left: 15px;
+    color: rgb(206, 205, 205);
+    font-size: 11px;
+    font-family: sans-serif;
+    padding: 4px;
+    color: rgb(37, 37, 37);
+}
+
+.name span {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+.name {
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+
+    
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 15px;
+    align-items: center;
+    width: 50%;
+
+
+}
+
+.span-1 {
+    color: rgb(37, 37, 37);
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.span-2 {
+    color: rgb(37, 37, 37);
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.number {
+    background-color: rgb(225, 222, 222);
+    border: 1px solid gainsboro;
+    position: relative;
+    margin-right: 10px;
+}
+
+.kntrl1 .row input {
+    width: 100px;
+}
+
+.del {
+    width: 21px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgb(235, 235, 235);
+}
+
+.del:hover {
+    background-color: rgb(244, 250, 255);
+}
+
+#klavye {
+    display: none;
+}
+
+.number table input {
+    border: none;
+    border-radius: 4px;
+
+}
+
+.number table input:hover {
+    background-color: rgb(244, 250, 255);
+
+}
+
+#btn {
+    border: none;
+    width: 40%;
+    border-radius: 6px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn:hover {
+    background-color: rgb(39 150 203);
+}
+
+.inputs {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle span {
+    margin: 0 auto;
+    top: 103px;
+    left: 19px; 
+    font-size: 36px;
+    color: rgb(30, 30, 30);
+    font-style:initial ;
+}
+
+.ust {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alt {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#inp {
+    width: 70px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+
+}
+
+#inp:focus {
+    border-bottom: 1px solid gray;
+    transition-duration: 0.3s;
+    border-radius: 7px;
+
+}
+
+.date_1 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cardMonth {
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+#cardYear {
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bottom_1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background:#6fabc4;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+select {
+    background:#6fabc4;}
+
+.cvv {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cardCvv {
+    width: 70px;
+}
+
+.span_1 {
+    width: 60%;
+
+}
+#cardName{
+    width: 250px;
+}
+
+#white{
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ 
+}
+.white{
+    width: 80%;
+    height: 60%;
+    background-color: rgb(190, 190, 190);
+}
+.white_2{
+    width: 10%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(173, 173, 173);
+}
+.white_2 span{
+font-size: 20px;
+}
+.card_credi_number{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+#mastercard{
+    width: 100px;
+    height: 65px;
+}
+#discover{
+    width: 100px;
+    height: 20px;
+}
+.cards, .back_card {
+    transition-duration:2s;
+    transition-property:background-color; 
+}
+
